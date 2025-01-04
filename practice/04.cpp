@@ -25,7 +25,27 @@ int main (){
     do{
         cout << "\n Enter a number to check : ";
         cin >> n;
-        checkPrime(n);
+        //with function 
+        //! checkPrime(n);
+
+        //without function 
+        bool isPrime=true;
+        if(n<=1){
+cout<< "\n This number is not prime .... \n";
+        }
+        else{
+            for (int i=2;i<n;i++){
+                if(n%i==0){
+isPrime=false;
+break;
+                }
+
+            }
+        }
+        if(isPrime)
+        cout << "\nThe number is a prime number ... \n";
+    else
+    cout<<"\nThe number is not prime number \n";
 
         cout << "\n Do you want to run the code again ? \n";
         cout << "Press Y/y for yes and press N/n for no ... \n";
