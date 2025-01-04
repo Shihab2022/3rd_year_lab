@@ -17,7 +17,17 @@ int main(){
     a:
     cout <<"\nPlease enter an not negative integer number : \n";
     cin >> n;
-    getFactorialValue(n);
+    //!with function
+    // getFactorialValue(n);
+    //!Without function 
+    int fact =1;
+    if(n<0)
+    cout <<"\nFactorial is not exits for negative number \n";
+else{
+    for (int i =1;i<=n;i++)
+    fact=fact*i;
+cout<< "\nFactorial of the given number is :" << fact<<endl;
+}
     cout << "\n Do you want to find factorial of another number ,then press 1 other wise 0 \n";
     cin >> x;
     if(x==1)
