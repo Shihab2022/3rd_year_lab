@@ -1,6 +1,6 @@
 #include<iostream>
 #include<cmath>
-#include<iomanio>
+#include<iomanip>
 using namespace std;
 
 #define t 0.0000001
