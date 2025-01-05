@@ -28,8 +28,36 @@ int main (){
     cout<<"\n Please enter the value of the arrray : \n";
     for (int i =0;i<n;i++)
     cin >>a[i];
-ascendDescending(a,n,true);
-ascendDescending(a,n,false);
+//!with function
+// ascendDescending(a,n,true);
+// ascendDescending(a,n,false);
+//!without function 
+
+//ascending 
+int temp ,i,j;
+for (i=0;i<n;i++){
+    for (j=i+1;j<n;j++){
+        if(a[i]>a[j]){
+            temp=a[i];
+            a[i]=a[j];
+            a[j]=temp;
+        }
+    }
+}
+cout << "\n The ascending order is :\n";
+for (i=0;i<n;i++)
+cout<<a[i]<<" ";
+// descending order
+for (i=0;i<n;i++){
+    for (j=i+1;j<n;j++){
+        temp=a[i];
+        a[i]=a[j];
+        a[j]=temp;
+    }
+}
+cout <<"\n The descending order is : \n";
+for (i=0;i<n;i++)
+cout<<a[i]<<" ";
 cout << "\n Do you want to check with new value then press 1 otherwise press 0 \n";
 cin >> x;
 if(x==1)
