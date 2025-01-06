@@ -60,3 +60,31 @@ int main(){
         goto reStart;
 
 }
+
+
+/*
+Basic structure of OOP;
+#include <iostream>
+#include<cmatch>
+#include<iomanip>
+using namespace std ;
+
+class Quardatic{
+private :
+    double a,b,c;
+    double root,r1,r2,disc,imp,rep;
+public :
+Quardatic()
+void ROOT(){
+what ever you need you can write here 
+}
+
+};
+
+int main(){
+
+restart:
+Quardatic qr;
+qr.Root();
+}
+*/
